@@ -1,0 +1,8 @@
+
+
+
+<button ng-click="getCategoryCards(category)" ng-repeat='category in categories' class="category-button">{{category}}</button>
+<loader ng-show='variable'></loader>
+<div ng-repeat="flashCard in flashCards | orderBy : 'question'" class="flash-card">
+    <flash-card flash-card="flashCard"></flash-card>
+</div>

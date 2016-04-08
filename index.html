@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flash Cards</title>
+        <!-- We've provided some styles for you, aren't we nice? -->
+        <link rel="stylesheet" type="text/css" href="reset.css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="angular.js" defer></script>
+        <script src="app.js" defer></script>
+        <script src="main.controller.js" defer></script>
+        <script src="/directives/loader/loader.js" defer></script>
+        <script src="/directives/flashcards/flashcards.directive.js" defer></script>
+    </head>
+    
+    <body ng-include="'templates/body.html'" ng-app="flashCards" ng-controller="MainController">
+
+    </body>
+    <div ng-controller="StatsController" id="statistics">
+
+    <div id="scoreboard">
+        <h3>Correct: <span>{{ scores.correct }}</span></h3>
+        <h3>Incorrect: <span>{{ scores.incorrect }}</span></h3>
+    </div>
+
+</div>
+</html>
